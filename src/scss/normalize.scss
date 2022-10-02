@@ -1,0 +1,36 @@
+@import "colors";
+
+@mixin container {
+  position: relative;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+@mixin subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin active {
+  color: $black !important;
+  font-weight: 700 !important;
+  transform: scale(1.07);
+  display: inline-block;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}

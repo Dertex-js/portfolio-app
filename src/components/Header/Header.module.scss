@@ -1,0 +1,51 @@
+@import "../../scss/normalize";
+
+.active {
+  @include active;
+}
+
+.container {
+  @include container;
+}
+
+.navMenu {
+
+}
+
+.menu {
+  max-width: 940px;
+  width: 100%;
+  min-height: 56px;
+  padding-top: 33px;
+  padding-bottom: 31px;
+  top: 0;
+  z-index: 1000;
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: $grey;
+    position: absolute;
+    bottom: 0;
+    transition: 1s all;
+    transform: var(--transform-menu-divider);
+  }
+}
+
+.menuList {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 0;
+
+  &Item {
+
+    &Link {
+      text-decoration: none;
+      color: $grey;
+      font-weight: 700;
+    }
+  }
+}

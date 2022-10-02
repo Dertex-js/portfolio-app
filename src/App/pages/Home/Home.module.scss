@@ -1,0 +1,23 @@
+@import "src/scss/normalize";
+
+.container {
+  @include container;
+}
+
+.titleBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+
+}
+
+.description {
+
+}
+
+.lang {
+
+}
