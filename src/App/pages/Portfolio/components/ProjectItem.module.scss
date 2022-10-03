@@ -1,0 +1,28 @@
+@import "src/scss/normalize";
+
+.item {
+  margin: 0 auto;
+  max-width: 940px;
+
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
+
+  &Link {
+
+  }
+
+  &Img {
+    border-radius: 25px;
+    max-height: 600px;
+    transition: 0.3s all;
+    width: 100%;
+    box-shadow: 0 0 45px -25px $black;
+  }
+}
+
+.description {
+  margin: 35px auto 35px auto;
+  font-size: 18px;
+  max-width: 650px;
+}

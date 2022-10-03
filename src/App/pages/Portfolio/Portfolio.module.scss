@@ -1,0 +1,12 @@
+@import "src/scss/normalize";
+
+.container {
+  @include container;
+  padding: 70px 0 0 0;
+  text-align: center;
+}
+
+.title {
+  @include title;
+  margin-bottom: 30px;
+}
