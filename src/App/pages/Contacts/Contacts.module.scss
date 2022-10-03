@@ -1,0 +1,46 @@
+@import "src/scss/normalize";
+
+.container {
+  @include container;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.title {
+  @include title;
+}
+
+.description {
+  @include subtitle;
+  margin: 20px auto 0 auto;
+  max-width: 400px;
+}
+
+.button {
+  display: inline-block;
+  margin: 30px auto 0;
+  min-width: 257px;
+  background-color: $black;
+  padding: 12px 30px;
+  text-decoration: none;
+  color: $background;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  border-radius: 30px;
+  transition: 0.3s all;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+}
+
+.linkList {
+
+}
+
+.item {
+
+}

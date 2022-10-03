@@ -1,0 +1,28 @@
+@import "src/scss/normalize";
+
+.item {
+  margin-top: 50px;
+  width: 25%;
+
+  &Img {
+    max-width: 89px;
+    max-height: 89px;
+  }
+
+  &Description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: $grey;
+    margin-top: 23px;
+  }
+
+  &Stars {
+    margin-top: 41px;
+  }
+}
+
+.star:not(:last-child) {
+  margin-right: 9px;
+}

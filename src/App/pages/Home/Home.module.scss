@@ -2,22 +2,42 @@
 
 .container {
   @include container;
+  padding: 40px 0 40px 0;
 }
 
 .titleBlock {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
 .name {
-
+  min-width: 160px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 37px;
+  color: $black;
+  margin-bottom: 0;
 }
 
 .description {
-
+  min-width: 160px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
 .lang {
+  min-width: 160px;
+  font-weight: 700;
+  font-size: 16px;
+  color: $grey;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  margin-bottom: 0;
+}
 
+.imgBlock {
+  margin-top: 30px;
 }
