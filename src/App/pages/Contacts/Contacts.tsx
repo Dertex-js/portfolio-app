@@ -32,17 +32,37 @@ const Contacts = () => {
         {disabled ? "Email скопирован" : email}
       </button>
       <div className={style.linkList}>
-        <a href="https://t.me/agzamov_az">
-          <img src={Telegram} alt="Telegram" className={style.item} />
+        <a
+          href="https://t.me/agzamov_az"
+          className={style.item}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={Telegram} alt="Telegram" className={style.itemImg} />
         </a>
-        <a href="https://t.me/agzamov_az">
-          <img src={Instagram} alt="Instagram" className={style.item} />
+        <a
+          href="https://www.instagram.com/agzam001"
+          className={style.item}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={Instagram} alt="Instagram" className={style.itemImg} />
         </a>
-        <a href="https://t.me/agzamov_az">
-          <img src={Vk} alt="VK" className={style.item} />
+        <a
+          href="https://vk.com/halvamagistram"
+          className={style.item}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={Vk} alt="VK" className={style.itemImg} />
         </a>
-        <a href="https://t.me/agzamov_az">
-          <img src={Linkedin} alt="Linkedin" className={style.item} />
+        <a
+          href="https://www.linkedin.com/in/dertex-js"
+          className={style.item}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={Linkedin} alt="Linkedin" className={style.itemImg} />
         </a>
       </div>
     </div>

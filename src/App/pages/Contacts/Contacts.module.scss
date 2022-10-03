@@ -38,9 +38,15 @@
 }
 
 .linkList {
-
+  max-width: 342px;
+  display: flex;
+  justify-content: space-between;
+  margin: 80px auto 0 auto;
 }
 
 .item {
-
+  &Img {
+    width: 40px;
+    height: 40px;
+  }
 }
