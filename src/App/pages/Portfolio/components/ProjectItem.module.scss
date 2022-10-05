@@ -26,3 +26,9 @@
   font-size: 18px;
   max-width: 650px;
 }
+
+@media (max-width: 1024px) {
+  .itemImg {
+    box-shadow: none;
+  }
+}

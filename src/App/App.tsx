@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useLayoutEffect, useState } from "react";
 
+import Burger from "@components/Burger";
 import Header from "@components/Header";
 import { routes } from "@config/routes";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
@@ -11,9 +12,20 @@ import Portfolio from "./pages/Portfolio";
 import Skills from "./pages/Skills";
 
 function App() {
+  const [pageWidth, setPageWidth] = useState(0);
+
+  useLayoutEffect(() => {
+    function updateSize() {
+      setPageWidth(window.innerWidth);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  });
+
   return (
     <BrowserRouter>
-      <Header />
+      {pageWidth < 767 ? <Burger /> : <Header />}
       <Routes>
         <Route path={routes.home} element={<Home />} />
         <Route path={routes.about} element={<About />} />

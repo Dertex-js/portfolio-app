@@ -21,7 +21,7 @@ const Home = () => {
         <div className={style.lang}>RU | ENG</div>
       </div>
       <div className={style.imgBlock}>
-        <img src={Logo} alt="My" />
+        <img src={Logo} alt="My" className={style.img} />
       </div>
     </div>
   );

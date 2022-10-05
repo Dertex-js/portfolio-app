@@ -26,3 +26,15 @@
 .star:not(:last-child) {
   margin-right: 9px;
 }
+
+@media (max-width: 800px) {
+  .item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .item {
+    width: 100%;
+  }
+}
