@@ -40,8 +40,9 @@
 }
 
 .imgBlock {
-  margin-top: 30px;
-  width: 100%;
+  margin-top: 40px;
+  height: 600px;
+  overflow: hidden;
 }
 
 .img {
@@ -50,17 +51,25 @@
 
 @media (max-width: 940px) {
   .container {
-    padding-right: 30px !important;
-    padding-left: 30px !important;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 }
 
 @media (max-width: 767px) {
+  .container {
+    padding: 61px 30px 104px 30px;
+  }
+
   .titleBlock {
     display: block;
   }
 
   .lang {
     display: none;
+  }
+
+  .imgBlock {
+    height: auto;
   }
 }

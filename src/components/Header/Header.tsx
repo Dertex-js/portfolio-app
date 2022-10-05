@@ -1,4 +1,4 @@
-import React, { memo } from "react";
+import React, { memo, useState } from "react";
 
 import cn from "classnames";
 import { NavLink } from "react-router-dom";
@@ -6,10 +6,16 @@ import { NavLink } from "react-router-dom";
 import style from "./Header.module.scss";
 
 const Header = () => {
+  const [active, setActive] = useState<boolean>(false);
+
+  const handleClick = () => {
+    setActive((prevState) => !prevState);
+  };
+
   return (
     <header className={style.navMenu}>
-      <nav className={style.container}>
-        <nav className={style.menu}>
+      <div className={style.container}>
+        <nav className={cn(style.menu, { [style.activeMenu]: active })}>
           <ul className={style.menuList}>
             <li className={style.menuListItem}>
               <NavLink
@@ -19,6 +25,7 @@ const Header = () => {
                     ? cn(style.menuListItemLink, style.active)
                     : style.menuListItemLink
                 }
+                onClick={() => setActive(false)}
                 end
               >
                 Главная
@@ -32,6 +39,7 @@ const Header = () => {
                     ? cn(style.menuListItemLink, style.active)
                     : style.menuListItemLink
                 }
+                onClick={() => setActive(false)}
               >
                 Обо мне
               </NavLink>
@@ -44,6 +52,7 @@ const Header = () => {
                     ? cn(style.menuListItemLink, style.active)
                     : style.menuListItemLink
                 }
+                onClick={() => setActive(false)}
               >
                 Навыки
               </NavLink>
@@ -56,6 +65,7 @@ const Header = () => {
                     ? cn(style.menuListItemLink, style.active)
                     : style.menuListItemLink
                 }
+                onClick={() => setActive(false)}
               >
                 Портфолио
               </NavLink>
@@ -68,13 +78,20 @@ const Header = () => {
                     ? cn(style.menuListItemLink, style.active)
                     : style.menuListItemLink
                 }
+                onClick={() => setActive(false)}
               >
                 Контакты
               </NavLink>
             </li>
           </ul>
         </nav>
-      </nav>
+        <div
+          className={cn(style.burger, { [style.activeBurger]: active })}
+          onClick={handleClick}
+        >
+          <span className={style.span}></span>
+        </div>
+      </div>
     </header>
   );
 };
