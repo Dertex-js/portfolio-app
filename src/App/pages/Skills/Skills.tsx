@@ -10,7 +10,7 @@ const Skills = () => {
     <div className={style.container}>
       <div className={style.title}>Навыки</div>
       <div className={style.subTitle}>
-        Основные языки и фреймворки, которые я использую
+        Основные языки, фреймворки и технологии, которые я использую
       </div>
       <div className={style.skillsWrapper}>
         {skillsList.map((item) => (

@@ -15,7 +15,7 @@
 .name {
   min-width: 160px;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 36px;
   line-height: 37px;
   color: $black;
   margin-bottom: 0;
@@ -29,15 +29,15 @@
   margin-bottom: 0;
 }
 
-.lang {
-  min-width: 160px;
-  font-weight: 700;
-  font-size: 16px;
-  color: $grey;
-  writing-mode: vertical-lr;
-  transform: rotate(-180deg);
-  margin-bottom: 0;
-}
+//.lang {
+//  min-width: 160px;
+//  font-weight: 700;
+//  font-size: 16px;
+//  color: $grey;
+//  writing-mode: vertical-lr;
+//  transform: rotate(-180deg);
+//  margin-bottom: 0;
+//}
 
 .imgBlock {
   margin-top: 40px;
@@ -65,9 +65,9 @@
     display: block;
   }
 
-  .lang {
-    display: none;
-  }
+  //.lang {
+  //  display: none;
+  //}
 
   .imgBlock {
     height: auto;

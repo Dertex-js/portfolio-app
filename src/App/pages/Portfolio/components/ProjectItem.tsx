@@ -11,7 +11,7 @@ export type ProjectItemProps = {
 const ProjectItem: FC<ProjectItemProps> = ({ image, description, src }) => {
   return (
     <div className={style.item}>
-      <a href={src} className={style.itemLink} target="_blank">
+      <a href={src} className={style.itemLink} target="_blank" rel="noreferrer">
         <img src={image} alt="work" className={style.itemImg} />
       </a>
       <div className={style.description}>{description}</div>
